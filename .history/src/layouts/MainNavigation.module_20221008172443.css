@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-height: 230px;
+}
+
+.logo {}
+
+.nav {}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.list__item {
+  margin-right: 1em;
+
+}
+
+.list__item a {
+  text-decoration: none;
+}

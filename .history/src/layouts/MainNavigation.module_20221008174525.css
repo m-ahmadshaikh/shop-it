@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .8em;
+  border: 1px solid pink;
+  height: 70px;
+  margin: 0;
+}
+
+.logo {
+  width: 147px;
+  height: 49px;
+}
+
+
+.nav__list {
+  display: flex;
+  list-style: none;
+
+}
+
+.list__item {
+  margin-right: 1.5em;
+
+}
+
+.list__item>a {
+  text-decoration: none;
+  font: inherit;
+  color: black;
+  font-weight: 600;
+  font-size: 1.25rem;
+  display: inline-block;
+  position: relative;
+}
+
+.list__item>a::after {
+  content: "";
+  display: block;
+  margin: 3px auto;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  background: transparent;
+  transition: all 0.3s;
+
+}
+
+
+li>a:hover::after, li>a.active::after {
+  width: 60%;
+  background: #FF5757;
+}

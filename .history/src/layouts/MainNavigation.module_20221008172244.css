@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+}
+
+.logo {}
+
+.nav {}
+
+.nav__list {
+  display: flex;
+
+}
+
+.list__item {}

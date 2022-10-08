@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {}
+
+.nav {}
+
+.nav__list {
+  display: flex;
+}
+
+.list__item {
+  margin-right: 4em;
+
+}

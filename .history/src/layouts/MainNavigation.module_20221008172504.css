@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid pink
+}
+
+.logo {
+  width: 10px;
+}
+
+.nav {}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.list__item {
+  margin-right: 1em;
+
+}
+
+.list__item a {
+  text-decoration: none;
+}

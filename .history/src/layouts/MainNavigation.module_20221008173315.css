@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: .8em;
+  border: 1px solid pink
+}
+
+.logo {
+  width: 150px;
+}
+
+
+.nav__list {
+  display: flex;
+  list-style: none;
+
+}
+
+.list__item {
+  margin-right: 1em;
+
+}
+
+.list__item a {
+  text-decoration: none;
+  font: inherit;
+  color: black;
+  font-weight: 600;
+  font-size: 1.25rem;
+  display: inline-block;
+  position: relative;
+}
+
+.list__item>a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: red;
+  transition: all 0.3s;
+
+}
+
+.active {
+  border-bottom: 1px solid red;
+}
+
+li>a:hover::after, li>a.active-nav::after {
+  width: 100%;
+  background: blue;
+}

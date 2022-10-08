@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: .8em;
+  border: 1px solid pink
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav {}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.list__item {
+  margin-right: 1em;
+
+}
+
+.list__item a {
+  text-decoration: none;
+  font: inherit;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
