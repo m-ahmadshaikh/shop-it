@@ -1,0 +1,10 @@
+.card {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  width: 500px;
+}
+
+.card img {
+  max-width: 170px;
+}

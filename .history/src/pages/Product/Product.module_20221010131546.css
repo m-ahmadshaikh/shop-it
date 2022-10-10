@@ -1,0 +1,11 @@
+.card {
+  width: 80%;
+
+  box-sizing: border-box;
+  padding: 5em;
+}
+
+
+.card img {
+  width: 60%;
+}

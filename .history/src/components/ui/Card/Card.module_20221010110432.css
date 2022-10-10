@@ -1,0 +1,54 @@
+.card {
+  padding: 2em;
+  margin: 2em;
+  border-radius: 20px;
+  width: 350px;
+  height: min-content;
+  text-align: left;
+  background-color: #E5E5E5;
+  overflow-wrap: break-word;
+}
+
+.card:hover {
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .12),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, .24);
+  ;
+  transition: all 0.15s ease-out;
+
+  transform: translateY(-1px);
+}
+
+
+.card img {
+  display: block;
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto;
+  transform: translateY(2px);
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .12),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, .24);
+  ;
+
+}
+
+.card h1 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.card p {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}

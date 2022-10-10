@@ -1,0 +1,19 @@
+.card {
+  padding: 1em;
+  margin: 2em;
+  border-radius: 20px;
+  width: 350px;
+  height: min-content;
+  text-align: left;
+  background-color: #E5E5E5;
+  overflow-wrap: break-word;
+}
+
+.card:hover {
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .12),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, .24);
+  ;
+  transition: all 0.15s ease-out;
+
+  transform: translateY(-1px);
+}

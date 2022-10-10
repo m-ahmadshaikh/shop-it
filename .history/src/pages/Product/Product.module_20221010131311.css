@@ -1,0 +1,13 @@
+.card {
+  width: 80%;
+
+  box-sizing: border-box;
+}
+
+.card * {
+  margin-left: auto;
+}
+
+.card img {
+  width: 60%;
+}

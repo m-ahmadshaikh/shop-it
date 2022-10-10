@@ -1,0 +1,10 @@
+.main {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background-color: #EFF2F5;
+}
+
+.title {
+  border-bottom: 1px dotted #c1c1c1;
+}

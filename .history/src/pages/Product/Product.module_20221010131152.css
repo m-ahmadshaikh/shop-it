@@ -1,0 +1,9 @@
+.card {
+  width: 80%;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 60%;
+}

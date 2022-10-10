@@ -1,0 +1,15 @@
+.card {
+  width: 80%;
+
+  box-sizing: border-box;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: -.2em;
+  align-items: flex-start;
+}
+
+.card img {
+  margin: 0;
+
+}

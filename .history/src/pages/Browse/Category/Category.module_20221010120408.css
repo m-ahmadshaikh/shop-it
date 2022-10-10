@@ -1,0 +1,15 @@
+.card {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: flex-start;
+  width: 500px;
+}
+
+.card img {
+  max-width: 170px;
+}
+
+.card p {
+  font-size: 2em;
+}

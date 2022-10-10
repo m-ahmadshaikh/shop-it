@@ -1,0 +1,31 @@
+.main {
+  display: grid;
+  place-items: center;
+  background-color: #EFF2F5;
+}
+
+.card {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: flex-start;
+  width: 500px;
+  cursor: pointer;
+}
+
+.card h1 {
+  font-size: 22px;
+  margin-left: .2em
+}
+
+.card img {
+  max-width: 170px;
+  margin: 0;
+  box-shadow: none;
+}
+
+.card p {
+  font-size: 2em;
+  align-self: flex-end;
+  margin-left: auto;
+}

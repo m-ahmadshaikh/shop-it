@@ -1,0 +1,13 @@
+.card {
+  width: 80%;
+
+  box-sizing: border-box;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: -.5em;
+}
+
+.card * {
+  margin: 0;
+}
