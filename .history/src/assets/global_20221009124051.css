@@ -1,0 +1,23 @@
+:root {
+  font-family: 'Quicksand', sans-serif;
+  --primary-color: #ff2947;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+.carousel .slide img {
+  max-height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.slide {}

@@ -1,0 +1,6 @@
+.carousel {
+  width: 60%;
+  height: 10px !important;
+  min-height: 10%;
+  border: 12px solid pink;
+}

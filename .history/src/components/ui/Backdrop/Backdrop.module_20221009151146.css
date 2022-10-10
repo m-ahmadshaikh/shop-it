@@ -1,0 +1,14 @@
+.background {
+  filter: blur(4px);
+  backdrop-filter: blur(10px);
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+
+.foreground {
+  width: 100%;
+  height: 100%;
+}
