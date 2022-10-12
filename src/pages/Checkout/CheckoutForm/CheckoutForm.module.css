@@ -1,0 +1,22 @@
+.main {
+  background-color: lightgray;
+  height: 100%;
+  padding: 1px;
+}
+
+.card {
+  background-color: #fff;
+  margin: 4em auto;
+  width: 80vw;
+  display: grid;
+  gap: .2em;
+  place-items: center;
+}
+
+.card .productCard {
+  width: 100%;
+}
+
+.card h1 {
+  font-size: 2em;
+}

@@ -1,0 +1,9 @@
+.main {
+  background-color: grey;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  margin: 0 auto;
+}

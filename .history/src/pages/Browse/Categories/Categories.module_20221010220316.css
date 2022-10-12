@@ -1,0 +1,22 @@
+.main {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background-color: #EFF2F5;
+}
+
+.title {
+  text-align: center;
+  font-family: Quicksand;
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+  width: 200px;
+  margin: auto auto 10px;
+  padding-top: 15px;
+}
+
+.card {
+  border-radius: 20px !important;
+  cursor: pointer;
+  width: 35000px;
+}

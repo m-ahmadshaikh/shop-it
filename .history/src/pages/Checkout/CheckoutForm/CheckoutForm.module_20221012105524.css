@@ -1,0 +1,10 @@
+.main {
+  background-color: lightgray;
+  height: 100vh;
+  padding: 1px;
+}
+
+.card {
+  background-color: #fff;
+  margin: 4em auto;
+}

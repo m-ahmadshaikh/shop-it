@@ -1,0 +1,10 @@
+.main {
+  background-color: grey;
+  height: 100vh;
+  padding: 1px;
+}
+
+.card {
+  background-color: #fff;
+  margin: 20px auto;
+}

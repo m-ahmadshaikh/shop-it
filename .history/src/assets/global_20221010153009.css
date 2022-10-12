@@ -1,0 +1,26 @@
+:root {
+  font-family: 'Quicksand', sans-serif;
+  --primary-color: #ff2947;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+.main {
+  display: block;
+  background-color: #EFF2F5;
+  height: 100vh;
+  width: 100%;
+}

@@ -1,0 +1,64 @@
+.main {
+  padding-top: 7em;
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+/* Firefox < 16 */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.card {
+  background-color: #FFFFFF;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+
+}
+
+
+.card h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+
+.btn:disabled {
+  background-color: #fb7687;
+}
+
+.error {
+  color: red;
+  align-self: flex-start;
+  font-size: 1em !important;
+  margin-top: 0;
+}

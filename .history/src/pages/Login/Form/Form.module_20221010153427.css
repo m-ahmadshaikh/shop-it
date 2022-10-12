@@ -1,0 +1,57 @@
+.main {
+  padding-top: 7em;
+}
+
+.card {
+  background-color: #FFFFFF;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  border-radius: 10px;
+  margin: 0 auto;
+
+}
+
+
+.card h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  transition: all .2s ease;
+  font-style: italic;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.form input:focus {
+  font-style: normal;
+  outline: white;
+  background-color: white;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+  ;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+
+.btn:disabled {
+  background-color: #fb7687;
+}

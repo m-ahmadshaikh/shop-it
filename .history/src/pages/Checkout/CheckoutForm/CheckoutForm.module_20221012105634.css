@@ -1,0 +1,15 @@
+.main {
+  background-color: lightgray;
+  height: 100vh;
+  padding: 1px;
+}
+
+.card {
+  background-color: #fff;
+  margin: 4em auto;
+  width: 80vw;
+}
+
+.card {
+  text-align: center;
+}

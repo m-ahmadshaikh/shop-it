@@ -1,0 +1,40 @@
+.card {
+  width: 80%;
+  box-sizing: border-box;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: -.5em;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.card * {
+  margin: 10px;
+}
+
+.card p {
+  font-size: 120%;
+}
+
+.card img {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.card button {
+  visibility: hidden;
+  position: relative;
+  ;
+}
+
+.card button::after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  background-color: red;
+  padding: 5px;
+  left: 0;
+  content: 'Buy now';
+}

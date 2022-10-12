@@ -1,0 +1,84 @@
+.main {
+  padding-top: 7em;
+
+}
+
+.card {
+  background-color: #FFFFFF;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.active {
+  animation: fadeIn .5s;
+}
+
+.card h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.card:hover {
+  transform: none;
+
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+
+.btn:disabled {
+  background-color: #fb7687;
+}
+
+.error {
+  color: red;
+  align-self: flex-start;
+  font-size: 1em !important;
+  margin-top: 0;
+}
+
+.authError {
+  background-color: #fff1f4;
+  min-height: 30px;
+  align-self: flex-start;
+  border-radius: 10px;
+  color: #000;
+  font-weight: 200 !important;
+  border: 1px solid #fb9999;
+  font-size: 16px;
+  padding: 2px 20px;
+  word-wrap: break-word;
+}
+
+.loadingSpinner {
+  width: 100vw;
+  height: 100vw;
+  display: grid;
+  place-items: center;
+}

@@ -1,0 +1,53 @@
+.main {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 80%;
+  box-sizing: border-box;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: -.5em;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+.card:hover {
+  transform: none;
+  box-shadow: none;
+
+}
+
+.card * {
+  margin: 10px;
+}
+
+.card p {
+  font-size: 120%;
+}
+
+.card img {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+
+.btn {
+
+  font-size: 28px;
+  border: none;
+  margin-right: 15px;
+  width: 60px;
+  height: 50px;
+  background-color: #e5e5e5;
+  font-family: Quicksand;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.btn::first-child {}
+
+.btn:nth-child(2) {}

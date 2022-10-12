@@ -1,0 +1,21 @@
+.active {}
+
+.active .modal {
+  opacity: 1;
+  left: 100%;
+
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: -100%;
+  padding: 50px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  opacity: 0;
+  transform: translateX(-500%);
+
+  transition: .3s;
+}

@@ -1,0 +1,47 @@
+.card {
+  padding: 2em;
+  margin: 2em;
+  border-radius: 20px;
+  width: 350px;
+  height: min-content;
+  text-align: left;
+  background-color: #E5E5E5;
+  overflow-wrap: break-word;
+}
+
+.card:hover {
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .12),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, .24);
+  ;
+  transition: all 0.15s ease-out;
+
+  transform: translateY(-1px);
+}
+
+
+.card img {
+  display: block;
+  width: 330px;
+  height: min-content;
+  object-fit: cover;
+  border-radius: 0.625em;
+  margin: 0 auto;
+  transform: translateY(2px);
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .12),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, .24);
+  ;
+
+}
+
+.card h1 {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card p {
+  display: block;
+  font-size: 1.17rem;
+  font-weight: 500;
+  font-weight: bold;
+}
