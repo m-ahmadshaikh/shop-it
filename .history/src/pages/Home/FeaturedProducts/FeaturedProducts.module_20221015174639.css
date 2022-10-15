@@ -1,5 +1,5 @@
 .main {
-  padding: 1px 20px;
+  padding: 1px 10px;
   text-align: center;
   background: #EFF2F5;
 
@@ -49,10 +49,6 @@
 
   .products {
     grid-template-columns: repeat(auto-fill, minmax(100vw, 1fr));
-  }
-
-  .main {
-    padding: 1px 0;
   }
 
 }

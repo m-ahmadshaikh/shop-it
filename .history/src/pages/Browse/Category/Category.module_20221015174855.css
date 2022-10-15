@@ -40,7 +40,7 @@
   }
 }
 
-@media (max-width:607px) {
+@media (max-width:600px) {
   .card {
     display: flex;
     flex-direction: column;
@@ -50,10 +50,6 @@
     width: 70%;
 
     cursor: pointer;
-  }
-
-  .main {
-    gap: 1em;
   }
 
   .card p {

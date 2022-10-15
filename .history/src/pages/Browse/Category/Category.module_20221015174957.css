@@ -40,7 +40,7 @@
   }
 }
 
-@media (max-width:607px) {
+@media (max-width:500px) {
   .card {
     display: flex;
     flex-direction: column;
