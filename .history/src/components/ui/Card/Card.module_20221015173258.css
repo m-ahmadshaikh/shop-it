@@ -47,8 +47,8 @@
   font-weight: bold;
 }
 
-@media (max-width:600px) {
+@media (min-width:600px) {
   .card {
-    max-width: 350px;
+    max-width: 200px;
   }
 }

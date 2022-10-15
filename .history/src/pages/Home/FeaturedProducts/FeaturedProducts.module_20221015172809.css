@@ -1,5 +1,5 @@
 .main {
-  padding: 0;
+  padding: 1em;
   text-align: center;
   background: #EFF2F5;
 }
@@ -21,7 +21,7 @@
 .card {
   padding: 1em;
   width: 100%;
-
+  margin: 0;
 }
 
 .card img {
