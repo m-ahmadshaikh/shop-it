@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-export default [
+const products = [
   {
     id: uuidv4(),
     name: 'Macbook Air 2018',
@@ -56,3 +56,5 @@ export default [
     isAvailable: true,
   },
 ];
+
+export default products;

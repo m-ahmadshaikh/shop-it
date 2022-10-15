@@ -1,0 +1,9 @@
+.card {
+  width: 80vw;
+  margin: auto;
+}
+
+.main {
+  display: grid;
+  gap: 2em;
+}

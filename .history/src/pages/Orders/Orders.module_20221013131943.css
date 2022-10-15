@@ -1,0 +1,9 @@
+.card {
+  width: 80vw;
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  gap: 200em;
+}
