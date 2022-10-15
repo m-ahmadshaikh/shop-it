@@ -1,7 +1,6 @@
 import React, { useReducer } from 'react';
 import authReducer, { initialAuthState } from './reducers/auth';
 import { browseInitialState, browseReducer } from './reducers/browse';
-import { initialOrderState, orderReducer } from './reducers/checkout';
 import { initialProductState, productReducer } from './reducers/product';
 
 export const globalContext = React.createContext();
@@ -16,10 +15,7 @@ function GlobalProvider({ children }) {
     productReducer,
     initialProductState
   );
-  const [orderState, orderDispatch] = useReducer(
-    orderReducer,
-    initialOrderState
-  );
+  const [order]
 
   return (
     <globalContext.Provider
@@ -30,8 +26,6 @@ function GlobalProvider({ children }) {
         browseDispatch,
         productState,
         productDispatch,
-        orderState,
-        orderDispatch,
       }}>
       {children}
     </globalContext.Provider>

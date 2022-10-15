@@ -4,7 +4,7 @@ import { validateCheckoutForm } from '../utils/Validators/FormValidator';
 const useCheckoutForm = (initialState) => {
   const [formData, setFormData] = useState(initialState);
   const isFormValid = Object.entries(formData).every(
-    (f) => f[1].isValid === true && f[1].value !== null
+    (f) => f[1].isValid === true
   );
 
   const onBlur = (e) => {
@@ -13,7 +13,7 @@ const useCheckoutForm = (initialState) => {
       ...prev,
       [name]: {
         value,
-        isValid: value === null ? false : true,
+        isValid: value.length <= 0 ? false : true,
       },
     }));
   };

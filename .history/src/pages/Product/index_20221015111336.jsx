@@ -18,7 +18,8 @@ function Product() {
     useContext(globalContext);
   const { products } = productState;
   const orderNowHandler = async () => {
-    authDispatch({ type: CHECK_AUTH_TIMEOUT });
+    // authDispatch({ type: CHECK_AUTH_TIMEOUT });
+    console.log(authState.userID);
     if (!authState.userID) {
       navigate('/login');
       return;

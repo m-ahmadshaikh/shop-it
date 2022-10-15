@@ -20,7 +20,7 @@ const unSetLocally = () => {
   localStorage.removeItem('expirationDate');
 };
 
-const authReducer = (state, { payload, type }) => {
+const authReducer = (state = initialAuthState, { payload, type }) => {
   switch (type) {
     case actionTypes.AUTH_LOADING:
       return { ...state, loading: true, error: null };
@@ -46,20 +46,16 @@ const authReducer = (state, { payload, type }) => {
       };
 
     case actionTypes.CHECK_AUTH_TIMEOUT:
-      return checkAuthTimeout(state);
+      checkAuthTimeout();
+      break;
+
     default:
       return state;
   }
 };
 
-const checkAuthTimeout = (state) => {
-  const expirationDate = localStorage.getItem('expirationDate');
-  const expirationTime = new Date(expirationDate).getTime();
-  const timeRemaining = expirationTime - Date.now();
-  if (+timeRemaining < 5) {
-    unSetLocally();
-    return { ...state, token: null, userID: null };
-  }
-  return { ...state };
+const checkAuthTimeout = async () => {
+  const expirationDate = await localStorage.getItem('expirationDate');
+  console.log(expirationDate);
 };
 export default authReducer;

@@ -1,13 +1,13 @@
-import React, { useContext } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Button, Card, FormInput } from '../../../components/ui';
 
 import useCheckoutForm from '../../../hooks/useCheckoutForm';
+import { checkout } from '../../../services/databaseApi';
 import classes from './CheckoutForm.module.css';
 import { v4 as uuidv4 } from 'uuid';
 import { globalContext } from '../../../context/Provider';
 import setOrder from '../../../context/actions/checkout';
-import { ORDER_RESET } from '../../../context/actionTypes';
 
 function CheckoutForm() {
   const [formData, onChange, onBlur, isFormValid] = useCheckoutForm({
@@ -18,16 +18,10 @@ function CheckoutForm() {
     city: { isValid: true, value: '' },
   });
   const { state } = useLocation();
-  const { orderState, orderDispatch, authState } = useContext(globalContext);
-  const { loading: isLoading, error, success: completed } = orderState;
-  const navigate = useNavigate();
+  const { orderState, orderDispatch } = useContext(globalContext);
+  const { loading: isLoading, error, succes: completed } = orderState;
+
   const { quantity, totalPrice, name } = state;
-
-  const orderPageRedirectHandler = () => {
-    orderDispatch({ type: ORDER_RESET });
-    navigate('/orders', { replace: true });
-  };
-
   const submitHandler = async (e) => {
     e.preventDefault();
     if (isFormValid) {
@@ -38,10 +32,10 @@ function CheckoutForm() {
         .reduce((acc, current) => {
           return Object.assign(acc, current);
         }, {});
+      console.log(parsedFormData);
       setOrder({
         orderID: uuidv4(),
         userInfo: parsedFormData,
-        userID: authState.userID,
         orderDetails: {
           name,
           totalPrice,
@@ -49,6 +43,33 @@ function CheckoutForm() {
           date: new Date(),
         },
       })(orderDispatch);
+
+      //   try {
+      //     setIsLoading(true);
+      //     setError(null);
+      //     await checkout({
+      //       // email,
+      //       orderID: uuidv4(),
+      //       userInfo: {
+      //         name: formData.name.value,
+      //         address: formData.address.value,
+      //         address2: formData.address2.value,
+      //         contect: formData.contact.value,
+      //         city: formData.city.value,
+      //       },
+      // orderDetails: {
+      //   name,
+      //   totalPrice,
+      //   quantity,
+      //   date: new Date(),
+      // },
+      //     });
+      //     setCompleted(true);
+      //   } catch (error) {
+      //     setError(error.message);
+      //   } finally {
+      //     setIsLoading(false);
+      //   }
     }
   };
 
@@ -61,12 +82,7 @@ function CheckoutForm() {
             <p>
               Your order has been successfully placed and will be delivered in 7
               - 10 Business days. Please visit the{' '}
-              <button
-                className="flat-button"
-                onClick={orderPageRedirectHandler}>
-                Orders
-              </button>{' '}
-              page to view your orders
+              <Link to="/orders">Orders</Link> page to view your orders
             </p>
           )}
           {!completed && (

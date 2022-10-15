@@ -17,20 +17,19 @@ function Product() {
   const { productState, authState, authDispatch, productDispatch } =
     useContext(globalContext);
   const { products } = productState;
-  const orderNowHandler = async () => {
+  const orderNowHandler = () => {
     authDispatch({ type: CHECK_AUTH_TIMEOUT });
-    if (!authState.userID) {
-      navigate('/login');
-      return;
-    }
-    setOpenModal((prev) => !prev);
+    // if (!authState.userID) {
+    //   navigate('/login');
+    //   return;
+    // }
+    // setOpenModal((prev) => !prev);
   };
   useEffect(() => {
     if (!products) {
       getProducts()(productDispatch);
     }
   }, []);
-
   if (productState.loading || !products) {
     return <p>loading...</p>;
   }

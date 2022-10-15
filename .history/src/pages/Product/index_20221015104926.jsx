@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Button, Card, Modal } from '../../components/ui';
-import getProducts from '../../context/actions/product';
 import { CHECK_AUTH_TIMEOUT } from '../../context/actionTypes';
 import { globalContext } from '../../context/Provider';
 
@@ -14,23 +13,16 @@ function Product() {
     totalPrice: 0,
   });
   const navigate = useNavigate();
-  const { productState, authState, authDispatch, productDispatch } =
-    useContext(globalContext);
+  const { productState, authState, authDispatch } = useContext(globalContext);
   const { products } = productState;
-  const orderNowHandler = async () => {
+  const orderNowHandler = () => {
     authDispatch({ type: CHECK_AUTH_TIMEOUT });
-    if (!authState.userID) {
-      navigate('/login');
-      return;
-    }
-    setOpenModal((prev) => !prev);
+    // if (!authState.userID) {
+    //   navigate('/login');
+    //   return;
+    // }
+    // setOpenModal((prev) => !prev);
   };
-  useEffect(() => {
-    if (!products) {
-      getProducts()(productDispatch);
-    }
-  }, []);
-
   if (productState.loading || !products) {
     return <p>loading...</p>;
   }

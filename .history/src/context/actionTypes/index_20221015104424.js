@@ -9,8 +9,3 @@ export const SET_CATEGORIES = 'SET_CATEGORIES';
 
 export const GETTING_PRODUCTS = 'GETTING_PRODUCTS';
 export const SET_PRODUCTS = 'SET_PRODUCTS';
-
-export const ORDER_START = 'ORDER_START';
-export const ORDER_SUCCESS = 'ORDER_SUCCESS';
-export const ORDER_FAIL = 'ORDER_FAIL';
-export const ORDER_RESET = 'ORDER_RESET';

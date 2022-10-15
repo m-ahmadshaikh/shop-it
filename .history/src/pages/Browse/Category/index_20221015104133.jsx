@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Card from '../../../components/ui/Card';
 import { globalContext } from '../../../context/Provider';
+import products from '../../../data/products';
 import classes from './Category.module.css';
 function Category() {
   const params = useParams();

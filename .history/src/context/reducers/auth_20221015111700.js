@@ -56,6 +56,7 @@ const checkAuthTimeout = (state) => {
   const expirationDate = localStorage.getItem('expirationDate');
   const expirationTime = new Date(expirationDate).getTime();
   const timeRemaining = expirationTime - Date.now();
+  console.log(timeRemaining < 5);
   if (+timeRemaining < 5) {
     unSetLocally();
     return { ...state, token: null, userID: null };

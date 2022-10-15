@@ -64,9 +64,4 @@ img {
   all: unset;
   text-decoration: underline;
   color: blue;
-  cursor: pointer;
-}
-
-.flat-button:active {
-  color: #ff2947;
 }

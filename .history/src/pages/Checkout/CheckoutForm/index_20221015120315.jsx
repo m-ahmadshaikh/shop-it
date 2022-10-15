@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Button, Card, FormInput } from '../../../components/ui';
 
 import useCheckoutForm from '../../../hooks/useCheckoutForm';
@@ -7,7 +7,6 @@ import classes from './CheckoutForm.module.css';
 import { v4 as uuidv4 } from 'uuid';
 import { globalContext } from '../../../context/Provider';
 import setOrder from '../../../context/actions/checkout';
-import { ORDER_RESET } from '../../../context/actionTypes';
 
 function CheckoutForm() {
   const [formData, onChange, onBlur, isFormValid] = useCheckoutForm({
@@ -20,14 +19,10 @@ function CheckoutForm() {
   const { state } = useLocation();
   const { orderState, orderDispatch, authState } = useContext(globalContext);
   const { loading: isLoading, error, success: completed } = orderState;
-  const navigate = useNavigate();
+
   const { quantity, totalPrice, name } = state;
 
-  const orderPageRedirectHandler = () => {
-    orderDispatch({ type: ORDER_RESET });
-    navigate('/orders', { replace: true });
-  };
-
+  const orderPageRedirectHandler = () => {};
   const submitHandler = async (e) => {
     e.preventDefault();
     if (isFormValid) {

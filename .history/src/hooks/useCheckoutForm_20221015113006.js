@@ -13,7 +13,7 @@ const useCheckoutForm = (initialState) => {
       ...prev,
       [name]: {
         value,
-        isValid: value === null ? false : true,
+        isValid: value.length <= 0 ? false : true,
       },
     }));
   };

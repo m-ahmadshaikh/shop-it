@@ -37,6 +37,7 @@ const authReducer = (state, { payload, type }) => {
       return { ...state, error: payload.error, loading: false };
 
     case actionTypes.AUTH_LOGOUT:
+      console.log('logout');
       unSetLocally();
 
       return {
@@ -52,10 +53,11 @@ const authReducer = (state, { payload, type }) => {
   }
 };
 
-const checkAuthTimeout = (state) => {
-  const expirationDate = localStorage.getItem('expirationDate');
+const checkAuthTimeout = async (state) => {
+  const expirationDate = await localStorage.getItem('expirationDate');
   const expirationTime = new Date(expirationDate).getTime();
   const timeRemaining = expirationTime - Date.now();
+  console.log(timeRemaining < 5);
   if (+timeRemaining < 5) {
     unSetLocally();
     return { ...state, token: null, userID: null };
