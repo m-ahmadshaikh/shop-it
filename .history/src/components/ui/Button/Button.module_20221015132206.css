@@ -1,0 +1,36 @@
+.button {
+  padding: 12px 25px;
+  background-color: #ff2947;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: max-content;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: all .3s ease;
+}
+
+.button+.button {
+  /* margin: .2em; */
+
+}
+
+.button:hover {
+  letter-spacing: .8px;
+  background-color: #fe0022;
+
+}
+
+.button:disabled {
+  background-color: #fe6176;
+}
+
+.button:disabled {
+  background-color: #fe6176;
+  letter-spacing: 0px;
+  cursor: default;
+}
