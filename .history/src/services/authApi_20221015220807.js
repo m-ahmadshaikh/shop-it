@@ -8,4 +8,4 @@ export const client = axios.create({
   },
 });
 
-export const apiKey = import.meta.env.VITE_API_KEY;
+export const apiKey = 'AIzaSyCEDALu2-PdCHiIREUygLYreCdLhjZ4s2Q';

@@ -1,6 +1,6 @@
 import axios from 'axios';
 const databaseClient = axios.create({
-  baseURL: import.meta.env.VITE_DATABASE_BASE_URL,
+  baseURL: import.v,
 });
 
 export default databaseClient;
