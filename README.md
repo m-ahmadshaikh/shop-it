@@ -28,12 +28,12 @@ And order the items by adding the necessary address details in the checkout page
 <li>NodeJS</li>
 </ul>
 <h2>Screen Shots</h2>
-![home](https://user-images.githubusercontent.com/43930796/197713354-6a427512-6078-416a-bfa5-2263800c58a8.png)
-![login](https://user-images.githubusercontent.com/43930796/197713376-01fac7bb-8c41-4548-bb4a-6f0e3064bf4c.png)
-![browse](https://user-images.githubusercontent.com/43930796/197713386-aa5f7ffb-0342-4931-b78f-75212fb196c1.png)
-![itempage](https://user-images.githubusercontent.com/43930796/197713397-56e668bc-efe2-4c4e-843c-d7b24ff96e97.png)
+<img src="https://user-images.githubusercontent.com/43930796/197713354-6a427512-6078-416a-bfa5-2263800c58a8.png"/>
+<img src="https://user-images.githubusercontent.com/43930796/197713376-01fac7bb-8c41-4548-bb4a-6f0e3064bf4c.png"/>
+<img src="https://user-images.githubusercontent.com/43930796/197713386-aa5f7ffb-0342-4931-b78f-75212fb196c1.png"/>
+<img src="https://user-images.githubusercontent.com/43930796/197713397-56e668bc-efe2-4c4e-843c-d7b24ff96e97.png"/>
 
 <h2>Setup</h2>
-<hr><p>Just execute npm install and then npm run dev to run this project</p>
+<hr><p>Just execute <b>npm install</b> and then <b>npm run dev</b> to run this project</p>
 <hr><p>Anyone can use this app using this url: https://shop-it-575.netlify.app/</p><h2>Project Status</h2>
 <hr><p>This project fully functional.</p>
